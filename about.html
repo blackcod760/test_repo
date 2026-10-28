@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us — VendorHub</title>
+  <style>
+    :root {
+      /* Placeholder palette — colors TBD */
+      --ink: #1f2933;
+      --ink-soft: #52606d;
+      --bg: #ffffff;
+      --bg-alt: #f5f7fa;
+      --line: #d9e2ec;
+      --accent: #334e68;
+      --accent-ink: #ffffff;
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 64rem;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Header nav */
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: var(--bg);
+    }
+
+    .site-header .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .wordmark {
+      font-size: 1.125rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin: 0;
+      text-decoration: none;
+      color: var(--ink);
+    }
+
+    .site-nav ul {
+      display: flex;
+      gap: 1.25rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .site-nav a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a:hover { text-decoration: underline; }
+
+    .site-nav a:focus-visible,
+    .site-nav a[aria-current="page"] {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    /* Page content */
+    .page {
+      padding: 3.5rem 0 4rem;
+    }
+
+    .page h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.15;
+      margin: 0 0 1.25rem;
+    }
+
+    .page h2 {
+      font-size: clamp(1.35rem, 3vw, 1.75rem);
+      margin: 2.5rem 0 0.75rem;
+    }
+
+    .page p {
+      color: var(--ink-soft);
+      max-width: 42rem;
+      margin: 0 0 1rem;
+    }
+
+    /* Footer nav */
+    .site-footer {
+      border-top: 1px solid var(--line);
+      background: var(--bg-alt);
+      padding: 2rem 0;
+    }
+
+    .site-footer .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .site-footer .wordmark { font-size: 1rem; }
+
+    .site-footer nav ul {
+      display: flex;
+      gap: 1.25rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .site-footer nav a {
+      color: var(--ink-soft);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .site-footer nav a:hover { text-decoration: underline; }
+
+    .site-footer nav a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    .site-footer p { margin: 0; color: var(--ink-soft); font-size: 0.875rem; }
+
+    @media (max-width: 30rem) {
+      .page { padding: 2.5rem 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html">VendorHub</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="wrap">
+      <h1>About VendorHub</h1>
+      <p>VendorHub is one marketplace for every SaaS tool your team needs. We bring trusted software vendors together so you can browse, compare, and buy in one place — without the procurement maze or a stack of scattered renewals.</p>
+
+      <h2>What we do</h2>
+      <p>Every seller is reviewed before listing, so the catalog stays one you can trust. Pricing, plans, and reviews sit side by side, and everything you buy across the marketplace lands on a single invoice.</p>
+
+      <h2>Why we built it</h2>
+      <p>Buying software had become ten open tabs, ten contracts, and ten renewal dates. We wanted teams to spend their time on the tools, not on the paperwork around them — and we wanted vendors a direct line to buyers already looking for what they make.</p>
+
+      <h2>Who it's for</h2>
+      <p>Teams picking tools, and the vendors building them. Buyers get one trustworthy catalog and one bill. Vendors get an audience that is already shopping.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="wordmark">VendorHub</p>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2025 VendorHub</p>
+    </div>
+  </footer>
+</body>
+</html>
